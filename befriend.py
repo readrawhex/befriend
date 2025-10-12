@@ -144,8 +144,6 @@ def scroll_feed(page, mlikes : int):
         post_like_button.click()
         wait_long()
         i += 1
-        if i % 5 == 0:
-            log(f"liked {i} posts from home feed")
     log(f"liked {i} posts from home feed")
 
 
