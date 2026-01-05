@@ -193,12 +193,12 @@ def main():
             log("loading session data from save file")
             sess_load(context, args.session_file)
 
+            page = login(context)
             log(
                 "following {0} users, liking {1} posts...".format(
                     args.follows, args.likes
                 )
             )
-            page = login(context)
             if args.follows > 0:
                 follow_recs(page, args.follows)
             if args.likes > 0:
